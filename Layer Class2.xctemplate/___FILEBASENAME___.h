@@ -19,6 +19,7 @@ class ___FILEBASENAMEASIDENTIFIER___ : public cocos2d::Layer
 {
 public:
 	static cocos2d::Scene* createScene();
+	static ___FILEBASENAMEASIDENTIFIER___* create();
     virtual bool init();
     CREATE_FUNC(___FILEBASENAMEASIDENTIFIER___);
 };

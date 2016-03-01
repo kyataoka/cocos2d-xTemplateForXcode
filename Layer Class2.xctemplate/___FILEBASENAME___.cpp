@@ -18,6 +18,19 @@ Scene* ___FILEBASENAMEASIDENTIFIER___::createScene() {
     return scene;
 }
 
+___FILEBASENAMEASIDENTIFIER___* ___FILEBASENAMEASIDENTIFIER___::create()
+{
+	___FILEBASENAMEASIDENTIFIER___ *pRet = new ___FILEBASENAMEASIDENTIFIER___;
+	if (pRet && pRet->init()) {
+		pRet->autorelease();
+		return pRet;
+	} else {
+		delete pRet;
+		pRet = nullptr;
+		return nullptr;
+	}
+}
+
 bool ___FILEBASENAMEASIDENTIFIER___::init() {
     if (!Layer::init()) {
         return false;

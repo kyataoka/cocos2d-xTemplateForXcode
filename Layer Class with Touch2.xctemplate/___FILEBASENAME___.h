@@ -19,8 +19,8 @@ class ___FILEBASENAMEASIDENTIFIER___ : public cocos2d::Layer
 {
 public:
 	static cocos2d::Scene* createScene();
+	static ___FILEBASENAMEASIDENTIFIER___* create();
     virtual bool init();
-    CREATE_FUNC(___FILEBASENAMEASIDENTIFIER___);
 	
 	bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
 	void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
