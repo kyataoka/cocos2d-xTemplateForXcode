@@ -15,7 +15,7 @@
 	<key>MainTemplateFile</key>
 	<string>___FILEBASENAME___.cpp</string>
 	<key>SortOrder</key>
-	<string>2</string>
+	<string>1</string>
 	<key>Summary</key>
 	<string>Layer継承クラス(CREATE_FUNC使わないタイプ)</string>
 </dict>

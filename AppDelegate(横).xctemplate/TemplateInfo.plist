@@ -7,16 +7,16 @@
 		<string>public.c-plus-plus-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>Layer</string>
+	<string>AppDelegate</string>
 	<key>Description</key>
-	<string>Layer継承クラス(タッチリスナ付き&amp;CREATE_FUNC使わないタイプ)</string>
+	<string>AppDelegate(横画面)</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___.cpp</string>
+	<string>AppDelegate.cpp</string>
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Summary</key>
-	<string>Layer継承クラス(タッチリスナ付き&amp;CREATE_FUNC使わないタイプ)</string>
+	<string>AppDelegate</string>
 </dict>
 </plist>
