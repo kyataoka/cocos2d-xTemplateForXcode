@@ -8,10 +8,6 @@
 
 #include "___FILEBASENAME___.h"
 
-#define WINSIZE Director::getInstance()->getWinSize()
-#define VISIBLESIZE Director::getInstance()->getVisibleSize()
-#define VISIBLEORIGIN Director::getInstance()->getVisibleOrigin()
-
 USING_NS_CC;
 
 Scene* ___FILEBASENAMEASIDENTIFIER___::createScene() {

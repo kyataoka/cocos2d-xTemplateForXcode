@@ -6,10 +6,14 @@
 //___COPYRIGHT___
 //
 
-#ifndef _____PROJECTNAMEASIDENTIFIER________FILEBASENAMEASIDENTIFIER_____
-#define _____PROJECTNAMEASIDENTIFIER________FILEBASENAMEASIDENTIFIER_____
+#ifndef ___FILEBASENAMEASIDENTIFIER____h
+#define ___FILEBASENAMEASIDENTIFIER____h
 
-#include "cocos2d.h"
+#define WINSIZE Director::getInstance()->getWinSize()
+#define VISIBLESIZE Director::getInstance()->getVisibleSize()
+#define VISIBLEORIGIN Director::getInstance()->getVisibleOrigin()
+
+#include <cocos2d.h>
 
 class ___FILEBASENAMEASIDENTIFIER___ : public cocos2d::Layer
 {
