@@ -22,10 +22,10 @@ public:
 	static ___FILEBASENAMEASIDENTIFIER___* create();
     virtual bool init();
 	
-	bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
-	void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
-	void onTouchCancelled(cocos2d::Touch *touch, cocos2d::Event *event);
-	void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
+	virtual bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
+	virtual void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
+	virtual void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
+	virtual void onTouchCancelled(cocos2d::Touch *touch, cocos2d::Event *event);
 };
 
 #endif /* defined(_____PROJECTNAMEASIDENTIFIER________FILEBASENAMEASIDENTIFIER_____) */

@@ -24,31 +24,33 @@ bool ___FILEBASENAMEASIDENTIFIER___::init() {
     }
     
     // 初期化
-	auto listener = EventListenerTouchOneByOne::create();
-	listener->onTouchBegan = CC_CALLBACK_2(___FILEBASENAMEASIDENTIFIER___::onTouchBegan, this);
-	listener->onTouchMoved = CC_CALLBACK_2(___FILEBASENAMEASIDENTIFIER___::onTouchMoved, this);
-	listener->onTouchEnded = CC_CALLBACK_2(___FILEBASENAMEASIDENTIFIER___::onTouchEnded, this);
-	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener, this);
+	auto touchListener = EventListenerTouchOneByOne::create();
+	touchListener->onTouchBegan = CC_CALLBACK_2(___FILEBASENAMEASIDENTIFIER___::onTouchBegan, this);
+	touchListener->onTouchMoved = CC_CALLBACK_2(___FILEBASENAMEASIDENTIFIER___::onTouchMoved, this);
+	touchListener->onTouchEnded = CC_CALLBACK_2(___FILEBASENAMEASIDENTIFIER___::onTouchEnded, this);
+	touchListener->onTouchCancelled = CC_CALLBACK_2(___FILEBASENAMEASIDENTIFIER___::onTouchCancelled, this);
+	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touchListener, this);
     
     return true;
 }
 
 bool ___FILEBASENAMEASIDENTIFIER___::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event)
 {
+	CCLOG("onTouchBegan");
 	return true;
 }
 
 void ___FILEBASENAMEASIDENTIFIER___::onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event)
 {
-	
+	CCLOG("onTouchMoved");
 }
 
 void ___FILEBASENAMEASIDENTIFIER___::onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event)
 {
-	
+	CCLOG("onTouchEnded");
 }
 
 void ___FILEBASENAMEASIDENTIFIER___::onTouchCancelled(cocos2d::Touch *touch, cocos2d::Event *event)
 {
-	
+	CCLOG("onTouchCancelled");
 }

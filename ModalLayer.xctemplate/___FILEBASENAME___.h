@@ -14,18 +14,19 @@
 #define VISIBLEORIGIN Director::getInstance()->getVisibleOrigin()
 
 #include <cocos2d.h>
+#include <ui/CocosGUI.h>
 
 class ___FILEBASENAMEASIDENTIFIER___ : public cocos2d::Layer
 {
 public:
-	static cocos2d::Scene* createScene();
     virtual bool init();
     CREATE_FUNC(___FILEBASENAMEASIDENTIFIER___);
 	
-	virtual bool onTouchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
-	virtual void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
-	virtual void onTouchEnded(cocos2d::Touch* touch, cocos2d::Event* event);
-	virtual void onTouchCancelled(cocos2d::Touch *touch, cocos2d::Event *event);
+private:
+	enum ZOder {
+		Z_Bg = 0,
+		Z_Button,
+	};
 };
 
 #endif /* defined(_____PROJECTNAMEASIDENTIFIER________FILEBASENAMEASIDENTIFIER_____) */
